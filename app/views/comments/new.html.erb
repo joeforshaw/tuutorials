@@ -1,0 +1,13 @@
+<h2>Add Comment for <%= @tutorial.name %></h2>
+
+<%= form_tag({:controller => :comments, :action => "create"}, :method => "post", :class => "add-comment") do %>
+  
+  <%= text_area_tag "body", "", :class => "input-xxlarge", :placeholder => "Your Comment", :rows => 5 %>
+  <%= hidden_field_tag "tutorial", @tutorial.id %>
+ 
+  <div class="form-actions input">
+  	<%= button_to "Submit Comment", {:controller => :tutorials, :action => :create}, :class => "btn btn-primary" %>
+    <%= button_to "Cancel", {:controller => :tutorials, :action => :show, :id => @tutorial.id }, :class => "btn", :method => :get %>
+  </div>
+
+<% end %>

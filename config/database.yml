@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: MrProgrammingTutorials_Development
+  host: localhost
+  pool: 5
+  username: 
+  password:
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: MrProgrammingTutorials_Test
+  host: localhost
+  pool: 5
+  username: 
+  password:
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: MrProgrammingTutorials_Production
+  host: localhost
+  pool: 5
+  username: 
+  password:

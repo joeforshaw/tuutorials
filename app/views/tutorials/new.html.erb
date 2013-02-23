@@ -1,0 +1,15 @@
+<h2>Add Tutorial for <%= @technology.name %></h2>
+
+<%= form_tag({:controller => :tutorials, :action => "create"}, :method => "post", :class => "add-tutorial") do %>
+  
+  <%= text_field_tag "name", "", :class => "input-xxlarge", :placeholder => "Name" %>
+  <%= text_field_tag "link", "", :class => "input-xxlarge", :placeholder => "Link" %>
+  <%= text_area_tag "description", "", :class => "input-xxlarge", :placeholder => "Description", :rows => 5 %>
+  <%= hidden_field_tag "technology", params[:technology] %>
+ 
+  <div class="form-actions input">
+  	<%= button_to "Submit Tutorial", {:controller => :tutorials, :action => :create}, :class => "btn btn-primary" %>
+    <%= button_to "Cancel", {:controller => :technologies, :action => :show, :id => params[:technology] }, :class => "btn", :method => :get %>
+  </div>
+
+<% end %>

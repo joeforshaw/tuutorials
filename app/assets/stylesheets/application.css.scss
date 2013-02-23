@@ -1,0 +1,170 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require reset
+ *= require bootstrap
+ *= require_self
+ *= require_tree
+ */
+
+@import url("https://fnt.webink.com/wfs/webink.css/?project=3709B5CA-B7B5-4753-AAD7-4D5ACAEC8172&fonts=741523D5-28BB-38D7-153A-061C4EDD1B98:f=CreteRounded-Regular,E3E82DBC-87D6-BA5B-D745-2846E3AA460D:f=SkolarWeb,E91036C1-9B3E-398B-6BC8-3F30F4412BFB:f=SkolarWeb-Bold");
+
+a {
+  text-decoration: none;
+}
+
+a.add {
+  float: right;
+  font-size: 20px;
+  margin: 20px 0 0 0;
+  text-align: right;
+  width: 290px;
+}
+
+body {
+  background-color: #F0F0F0;
+  color: #444;
+  font-family: 'SkolarWeb', Helvetica;
+}
+
+div.three-column {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+}
+
+div.three-column div {
+  width: 100%;
+}
+
+div.clear {
+  clear: both;
+}
+
+div#content {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px #999;
+}
+
+div#footer {
+  background-image:url('navy_blue.png');
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 5px #999;
+  clear: both;
+  color: #999;
+  margin: 0 0 50px 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+div#header {
+  background-image: url('navy_blue.png');
+  background-color: #C4C4C4;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 0px 5px #999;
+  margin: 50px 0 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.list-box {
+  border: solid #F0F0F0;
+  border-width: 2px 0px 0px 0px;
+  padding: 10px 0;
+}
+
+div.list-box-text {
+  overflow: hidden;
+}
+
+div#main-content {
+  float: left;
+  height: 94%;
+  padding: 10px;
+  width: 730px;
+}
+
+div#page {
+  margin: 0 auto;
+  max-height: 100%;
+  min-height: 100%;
+  width: 900px;
+}
+
+div#left-bar {
+  border-right: solid #F0F0F0;
+  border-width: 2px;
+  float: left;
+  height: 100%;
+  padding: 10px 0;
+  width: 148px;
+}
+
+div#left-bar ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'CreteRounded-Regular', Helvetica;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0 0;
+  padding: 20px 0;
+  text-shadow: 0px 1px 1px grey;
+}
+
+h1 a {
+  color: #F0F0F0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3.subheading {
+  float: left;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 10px 0;
+  width: 440px;
+}
+
+img#logo {
+  height: 90px;
+  padding: 0 20px;
+  vertical-align: text-bottom;
+  width: 100px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 150%;
+  margin: 0;
+}
+
+span.category {
+  color: #F0F0F0;
+  float: right;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 0; 
+  text-align: right;
+}
+
+span.empty-placeholder {
+  color: #F0F0F0;
+}

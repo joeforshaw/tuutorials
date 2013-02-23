@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Mr. Programming Tutorials</title>
+    <%= stylesheet_link_tag "reset" %>
+    <%= stylesheet_link_tag "bootstrap" %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <div id="page">   
+
+      <div id="header">
+        
+        <h1>
+          <%= link_to image_tag("logo.png", :id => "logo"), :root %>
+          <%= link_to "Mr. Programming Tutorials", :root %>
+        </h1>
+
+        <div class="clear"></div>
+      
+      </div>
+
+      <div id="content">
+        
+        <div id="left-bar">
+          
+          <ul>
+            <% all_technologies.each do |technology| %>
+              <li class="side-bar-item"><%= link_to technology.name, technology %></li>
+            <% end %>
+          </ul>
+        
+        </div>
+
+	    <div id="main-content">
+	      
+	      <%= yield %>
+	    
+	    </div>
+        
+        <div class="clear"></div>
+      
+      </div>
+    
+      <div id="footer">
+        
+        &copy Joe Forshaw <%= Time.new.year %> - <a href="https://twitter.com/JoeDForshaw">@JoeDForshaw</a> - <a href="https://joeforshaw.co.uk">joeforshaw.co.uk</a>
+      
+      </div>
+    
+    </div>
+  
+  </body>
+
+</html> 
