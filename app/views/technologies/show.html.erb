@@ -1,19 +1,10 @@
-<h2 class="technology-name">
+<%= link_to "+ Add Tutorial", { :action => "new", :controller => "tutorials", :technology => @technology.id }, :class => "add" %>
+
+<%# Technology name %>
+<h2 class="main-heading">
   <%= @technology.name %>
 </h2>
-
-<span class="category"><%= @technology.technology_category.name %></span>
-
 <div class="clear"></div>
-
-<%# Technology description %>
-<p class="technology-description">
-  <% if !@technology.description.nil? && @technology.description != "" %>
-    <%= @technology.description %>
-  <% else %>
-    <span class="empty-placeholder"><%= "No description submitted" %></span>
-  <% end %>
-</p>
 
 <%# Technology tags %>
 <p>
@@ -22,25 +13,22 @@
   <% end %>
 </p>
 
-<h3 class="subheading">Tutorials</h3>
-
-<%= link_to "+ Add Tutorial", { :action => "new", :controller => "tutorials", :technology => @technology.id }, :class => "add" %>
-
+<%# Tutorials heading %>
 <div class="clear"></div>
 
 <% if @tutorials.size == 0 %>
-  <span class="empty-placeholder"><%= "No tutorials submitted" %></span>
+  <span class="empty-placeholder">No tutorials submitted</span>
 <% end %>
 
 <% @tutorials.each do |tutorial| %>
   <div class="list-box">
 
-    <%# Bootstrap tutorial rating bar %>
+    <%# Bootstrap Tutorial rating bar %>
     <div class="progress progress-success progress-striped">        
       <div class="bar" style="width: <%= tutorial.percent_rating %>%;"></div>
     </div>
     
-    <%# Tutorial link, submitter and up/down vote glyphs %>
+    <%# Tutorial link, submitter and up/down vote buttons %>
     <div class="list-box-text">
                 
       <div class="tutorial-wrapper">
@@ -61,7 +49,7 @@
           Submitted by 
           <%= link_to tutorial.user.username, tutorial.user %> | 
           <%= link_to "Report" %> |
-          <%= "#{tutorial.up_votes + tutorial.down_votes} #{tutorial.up_votes + tutorial.down_votes == 1 ? "vote" : "votes"}" %> |
+          <%= "#{tutorial.total_votes} #{tutorial.total_votes == 1 ? "vote" : "votes"}" %> |
           <%= link_to "#{tutorial.comments.size} #{tutorial.comments.size == 1 ? "comment" : "comments"}", tutorial %>
         </p>
         

@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   helper_method :all_technologies
 
   def all_technologies
-    Technology.all
+    Technology.all.sort! { |a, b| a.name <=> b.name }
   end
 end

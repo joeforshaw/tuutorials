@@ -23,24 +23,15 @@ a {
 a.add {
   float: right;
   font-size: 20px;
-  margin: 20px 0 0 0;
+  line-height: 60px;
+  margin: 10px 0 0 0;
   text-align: right;
-  width: 290px;
 }
 
 body {
   background-color: #F0F0F0;
-  color: #444;
-  font-family: 'SkolarWeb', Helvetica;
-}
-
-div.three-column {
-  float: left;
-  text-align: center;
-  width: 33.33%;
-}
-
-div.three-column div {
+  color: #999999;
+  font-family: 'CreteRounded-Regular', 'SkolarWeb', Helvetica;
   width: 100%;
 }
 
@@ -49,63 +40,51 @@ div.clear {
 }
 
 div#content {
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 5px #999;
+  text-shadow: 0 1px #ffffff;
+  width: 100%;
+}
+
+div#content-wrapper {
+  background-image: url('first_aid_kit.png');
+  padding: 60px 200px;
 }
 
 div#footer {
-  background-image:url('navy_blue.png');
+  background-image:url('px_by_Gre3g.png');
   background-color: #FFFFFF;
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 0px 5px #999;
   clear: both;
   color: #999;
-  margin: 0 0 50px 0;
-  padding: 20px 0;
+  padding: 50px 0;
+  position: relative;
   text-align: center;
 }
 
 div#header {
-  background-image: url('navy_blue.png');
-  background-color: #C4C4C4;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 0px 0px 5px #999;
-  margin: 50px 0 0 0;
-  overflow: hidden;
-  white-space: nowrap;
+  -webkit-box-shadow: 0 3px 3px #999;
+     -moz-box-shadow: 0 3px 3px #999;
+          box-shadow: 0 3px 3px #999; 
+    background-image: url('px_by_Gre3g.png');
+
+  padding: 40px 200px;
+  position: relative;
+  z-index: 100;
 }
 
 div.list-box {
-  border: solid #F0F0F0;
+  border: solid #CCC;
   border-width: 2px 0px 0px 0px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 div.list-box-text {
   overflow: hidden;
 }
 
-div#main-content {
-  float: left;
-  height: 94%;
-  padding: 10px;
-  width: 730px;
-}
-
 div#page {
-  margin: 0 auto;
   max-height: 100%;
   min-height: 100%;
-  width: 900px;
-}
-
-div#left-bar {
-  border-right: solid #F0F0F0;
-  border-width: 2px;
-  float: left;
-  height: 100%;
-  padding: 10px 0;
-  width: 148px;
 }
 
 div#left-bar ul {
@@ -114,46 +93,54 @@ div#left-bar ul {
   padding: 0;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
+div#login {
+  float: right;
+  font-size: 30px;
+  line-height: 60px;
 }
 
 h1 {
-  font-family: 'CreteRounded-Regular', Helvetica;
+  color: #333;
+  float: left;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 60px;
+  line-height: 60px;
   margin: 0 0;
-  padding: 20px 0;
-  text-shadow: 0px 1px 1px grey;
 }
 
 h1 a {
   color: #F0F0F0;
 }
 
-h2 {
-  font-size: 40px;
+h2.main-heading {
+  float: left;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0 0 20px 0;
+  white-space: nowrap;
 }
 
-h3.subheading {
+h3.sub-heading {
   float: left;
-  font-size: 30px;
-  line-height: 30px;
-  margin: 10px 0;
-  width: 440px;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
 }
 
 img#logo {
   height: 90px;
   padding: 0 20px;
   vertical-align: text-bottom;
-  width: 100px;
 }
 
 p {
-  font-size: 15px;
-  line-height: 150%;
+  font-size: 20px;
+  line-height: 30px;
   margin: 0;
+}
+
+p#description {
+  margin: 0 0 20px 0;
 }
 
 span.category {
@@ -161,10 +148,9 @@ span.category {
   float: right;
   font-size: 20px;
   line-height: 20px;
-  padding: 10px 0; 
+  padding: 15px 0; 
   text-align: right;
 }
 
 span.empty-placeholder {
-  color: #F0F0F0;
 }

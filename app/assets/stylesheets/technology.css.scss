@@ -35,25 +35,18 @@ div.tutorial-info-wrapper p {
 
 div.vote-wrapper {
   float: left;
-  font-size: 50px;
-  line-height: 50px;
-  text-align: center;
-  width: 90px;
-}
-
-h2.technology-name {
-  float: left;
   font-size: 40px;
   line-height: 40px;
-  margin: 0;
+  text-align: center;
 }
 
 h4.tutorial-name {
   float: left;
   font-size: 20px;
-  margin: 0;
-  padding: 10px 0 10px 0;
+  line-height: 30px;
+  margin: 10px 0 0 0;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 input.btn.btn-primary {
@@ -65,10 +58,10 @@ p.tutorial-info {
   color: #999;
   float: left;
   font-size: 15px;
-  line-height: 15px;
-  width: 620px;
+  line-height: 20px;
+  margin: 0 0 0 90px;
 }
 
-p.technology-description {
-  margin: 10px 0;
+p#technology-description {
+  margin: 0 0 10px 0;
 }

@@ -5,7 +5,8 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
-TechnologyCategory.create(:name => "Programming Language")
+
+TechnologyCategory.create(:name => "Language")
 TechnologyCategory.create(:name => "Framework")
 TechnologyCategory.create(:name => "Tool")
 

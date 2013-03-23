@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Mr. Programming Tutorials</title>
+    <title>tuuutorials.</title>
     <%= stylesheet_link_tag "reset" %>
     <%= stylesheet_link_tag "bootstrap" %>
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -18,34 +18,31 @@
       <div id="header">
         
         <h1>
-          <%= link_to image_tag("logo.png", :id => "logo"), :root %>
-          <%= link_to "Mr. Programming Tutorials", :root %>
+          <%= link_to "tuuutorials.", :root %>
         </h1>
+
+        <div id="login" >
+        <% if user_signed_in? %>
+          <%= link_to current_user.username, current_user %>
+        <% else %>
+          <%= link_to "Log in", "http://joeforshaw.co.uk" %>
+          -
+          <%= link_to "Register", "http://joeforshaw.co.uk" %>
+        <% end %>
+        </div>
 
         <div class="clear"></div>
       
       </div>
 
-      <div id="content">
-        
-        <div id="left-bar">
-          
-          <ul>
-            <% all_technologies.each do |technology| %>
-              <li class="side-bar-item"><%= link_to technology.name, technology %></li>
-            <% end %>
-          </ul>
-        
+      <div id="content-wrapper">
+	      
+        <div id="content">
+
+	        <%= yield %>
+
         </div>
 
-	    <div id="main-content">
-	      
-	      <%= yield %>
-	    
-	    </div>
-        
-        <div class="clear"></div>
-      
       </div>
     
       <div id="footer">

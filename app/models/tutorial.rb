@@ -39,5 +39,9 @@ class Tutorial < ActiveRecord::Base
     update_attribute :down_votes, (down_votes + 1)
   end
 
+  def total_votes 
+    up_votes + down_votes
+  end
+
 end
         

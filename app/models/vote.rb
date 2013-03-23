@@ -7,7 +7,7 @@ class Vote < ActiveRecord::Base
   validates :user_id,     :presence => true
   validates :score,       :presence => true
   validates :user_id,     :uniqueness => {:scope => :tutorial_id,
-                                                    :message => "has already voted for this tutorial"}
+                                                    :message => "has already voted for this tutorial!"}
 
   belongs_to :tutorial
   belongs_to :user
