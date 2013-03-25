@@ -8,13 +8,18 @@ class VotesController < ApplicationController
   end
 
   def new
+    if !user_signed_in?
+      redirect_to :user_session
+      return
+    end
+
     @tutorial = Tutorial.find(params[:tutorial])
     score = params[:vote].to_i
 
     @vote = Vote.new(
       :score       => score,
       :tutorial_id => @tutorial.id,
-      :user_id     => 1
+      :user_id     => current_user.id
     )
     
     if @vote.valid? && @vote.save

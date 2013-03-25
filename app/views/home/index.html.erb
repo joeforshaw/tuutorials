@@ -1,5 +1,36 @@
-<ul>
-  <% all_technologies.each do |technology| %>
-    <li class="side-bar-item"><%= link_to technology.name, technology %></li>
+<div>
+  <p>Stuff to explain tuutorials</p><br />
+</div>
+
+<div id="nav-container">
+  <ul id="nav-list">
+    
+    <% ("A".."Z").each do |letter| %>
+      <li class="nav-item" onclick=$('#<%= letter %>').goTo();>
+        <%= letter %>
+      </li>
+    <% end %>
+
+    <li class="nav-item" onclick=$('#numbers').goTo();>0-9</li>
+
+    <li class="nav-item" onclick=$('#symbols').goTo();>!?#</li>
+
+  </ul>
+</div>
+
+<ul id="technology-list">
+
+  <% ("A".."Z").each do |letter| %>
+    <h2 class="letter" id="<%= letter %>"><%= letter %></h2>
+      <% if !@groupedAlphabetically[letter].nil? %>
+        <% @groupedAlphabetically[letter].each do |technology| %>
+          <li class="technology-item"><%= link_to technology.name, technology %></li>
+        <% end %>
+      <% end %>
   <% end %>
+
+  <h2 class="letter" id="numbers">0-9</h2>
+
+  <h2 class="letter" id="symbols">!?#</h2>
+
 </ul>

@@ -1,5 +1,3 @@
-<span class="category"><%= @tutorial.technology.name %></span>
-
 <h2 class="main-heading">
   <%= @tutorial.name %>
 </h2>
@@ -10,7 +8,7 @@
 
 <h3 class="sub-heading">Comments</h3>
 
-<%= link_to "+ Add Comment", { :controller => :comments, :action => :new, :tutorial => @tutorial.id }, :class => "add" %>
+<%= link_to "+ Add Comment", { :controller => :comments, :action => :new, :tutorial => @tutorial.id }, :class => "add-comment" %>
 
 <div class="clear"></div>
 
@@ -20,7 +18,7 @@
 
   	<h4 class="comment-title"><%= link_to comment.user.username, comment.user %></h4>
 
-  	<span class="comment-timestamp"><%= comment.created_at %></span>
+  	<span class="comment-timestamp">at <%= comment.created_at %></span>
 
   	<div class="clear"></div>
 
@@ -33,5 +31,5 @@
 <% end %>
 
 <% if @comments.size == 0 %>
-  <span class="empty-placeholder">No comments submitted</span>
+  <p>No comments submitted</p>
 <% end %>

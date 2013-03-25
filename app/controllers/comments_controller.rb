@@ -8,6 +8,9 @@ class CommentsController < ApplicationController
   end
 
   def new
+    if !user_signed_in?
+      redirect_to :user_session
+    end
     @tutorial = Tutorial.find(params[:tutorial])
   end
 
@@ -16,12 +19,12 @@ class CommentsController < ApplicationController
     @comment = Comment.new(
       :body        => params[:body],
       :tutorial_id => @tutorial.id,
-      :user_id     => 1
+      :user_id     => current_user.id
     )
     if @comment.save
       @result = "Successfully added comment"
     else
-      @result = "Failed to add comment"
+      @result = "Failed to add comment: #{params[:comment]}, #{@tutorial.id}, #{current_user.id}"
     end
   end
 

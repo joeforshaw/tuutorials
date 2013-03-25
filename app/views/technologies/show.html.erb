@@ -17,7 +17,7 @@
 <div class="clear"></div>
 
 <% if @tutorials.size == 0 %>
-  <span class="empty-placeholder">No tutorials submitted</span>
+  <p>No tutorials submitted</p>
 <% end %>
 
 <% @tutorials.each do |tutorial| %>
@@ -39,20 +39,23 @@
         </div> 
         
         <div class="tutorial-info-wrapper">
-          <h4 class="tutorial-name">
+          <h3 class="tutorial-name">
             <%= link_to tutorial.name, tutorial.link %>
-          </h4>
+          </h3>
+                
+          <p class="tutorial-info">
+            Submitted by 
+            <span class="tutorial-info-item"><%= link_to tutorial.user.username, tutorial.user %></span>
+            <span class="tutorial-info-item">-</span>
+            <span class="tutorial-info-item"><%= link_to "Report" %></span>
+            <span class="tutorial-info-item">-</span>
+            <span class="tutorial-info-item"><%= "#{tutorial.total_votes} #{tutorial.total_votes == 1 ? "vote" : "votes"}" %></span>
+            <span class="tutorial-info-item">-</span>
+            <span class="tutorial-info-item"><%= link_to "#{tutorial.comments.size} #{tutorial.comments.size == 1 ? "comment" : "comments"}", tutorial %></span>
+          </p>
         
         </div>
-        
-        <p class="tutorial-info">
-          Submitted by 
-          <%= link_to tutorial.user.username, tutorial.user %> | 
-          <%= link_to "Report" %> |
-          <%= "#{tutorial.total_votes} #{tutorial.total_votes == 1 ? "vote" : "votes"}" %> |
-          <%= link_to "#{tutorial.comments.size} #{tutorial.comments.size == 1 ? "comment" : "comments"}", tutorial %>
-        </p>
-        
+
         <div class="clear"></div>
 
       </div>
@@ -60,4 +63,5 @@
     </div>
     
   </div>
+  
 <% end %>

@@ -1,5 +1,54 @@
-p.heading {
-  color: #292929;
-  font-size: 140%;
-  font-weight: bold;
+div#technology-container {
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+}
+
+h2.letter {
+  font-size: 60px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+div#nav-container {
+  border-bottom: 3px solid #CCC;
+  padding: 0 0 20px 0;
+}
+
+li.technology-item {
+  list-style: none;
+  box-shadow: 0 0 15px #777;
+  font-size: 40px;
+  line-height: 140px;
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+  text-shadow: 0 0;
+  white-space: nowrap;
+}
+
+li.nav-item {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  list-style: none;
+  margin: 3px;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;
+}
+
+li.nav-item:hover {
+  color: #08c;
+}
+
+ul#technology-list {
+  margin: 0;
+}
+
+ul#nav-list {
+  margin: 0;
+  text-align: center;
 }

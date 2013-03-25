@@ -9,6 +9,9 @@
   end
 
   def new
+    if !user_signed_in?
+      redirect_to :user_session
+    end
     @technology = Technology.find(params[:technology])
   end
 
@@ -16,10 +19,10 @@
     @technology = Technology.find(params[:technology])
     @tutorial = Tutorial.new(
       :name          => params[:name],
-      :link          => params[:link],
+      :link          => /^http/.match(params[:link]) ? params[:link] : "http://#{params[:link]}",
       :description   => params[:description],
       :technology_id => @technology.id,
-      :user_id       => 1,
+      :user_id       => current_user.id,
       :up_votes      => 0,
       :down_votes    => 0
     )

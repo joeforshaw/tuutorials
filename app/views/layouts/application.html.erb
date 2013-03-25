@@ -2,56 +2,56 @@
 <html>
 
   <head>
-    <title>tuuutorials.</title>
+    <title>tuutorials.</title>
     <%= stylesheet_link_tag "reset" %>
     <%= stylesheet_link_tag "bootstrap" %>
     <%= stylesheet_link_tag "application", :media => "all" %>
-    
+
     <%= javascript_include_tag "application" %>
+  
     <%= csrf_meta_tags %>
   </head>
 
   <body>
 
-    <div id="page">   
-
-      <div id="header">
-        
-        <h1>
-          <%= link_to "tuuutorials.", :root %>
-        </h1>
-
-        <div id="login" >
-        <% if user_signed_in? %>
-          <%= link_to current_user.username, current_user %>
-        <% else %>
-          <%= link_to "Log in", "http://joeforshaw.co.uk" %>
-          -
-          <%= link_to "Register", "http://joeforshaw.co.uk" %>
-        <% end %>
-        </div>
-
-        <div class="clear"></div>
+    <div id="header">
       
+      <h1>
+        <%= link_to "tuutorials.", :root %>
+      </h1>
+
+      <div id="login" >
+      <% if user_signed_in? %>
+        <%= link_to current_user.username, current_user %>
+        -
+        <%= link_to "Log out", :destroy_user_session, :method => :delete %>
+      <% else %>
+        <%= link_to "Log in", :user_session, :method => :post %>
+        -
+        <%= link_to "Register", :new_user_registration %>
+      <% end %>
       </div>
 
-      <div id="content-wrapper">
-	      
-        <div id="content">
-
-	        <%= yield %>
-
-        </div>
-
-      </div>
-    
-      <div id="footer">
-        
-        &copy Joe Forshaw <%= Time.new.year %> - <a href="https://twitter.com/JoeDForshaw">@JoeDForshaw</a> - <a href="https://joeforshaw.co.uk">joeforshaw.co.uk</a>
-      
-      </div>
+      <div class="clear"></div>
     
     </div>
+
+    <div id="content-wrapper">
+      
+      <div id="content">
+
+        <%= yield %>
+
+      </div>
+
+    </div>
+  
+    <div id="footer">
+      
+      &copy Joe Forshaw <%= Time.new.year %> - <a href="https://twitter.com/JoeDForshaw">@JoeDForshaw</a> - <a href="https://joeforshaw.co.uk">joeforshaw.co.uk</a>
+    
+    </div>
+    
   
   </body>
 

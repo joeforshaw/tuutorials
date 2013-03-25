@@ -1,13 +1,17 @@
-<h2>Add Comment for <%= @tutorial.name %></h2>
+<h2 id="form-heading">Add Comment for "<%= @tutorial.name %>"</h2>
 
-<%= form_tag({:controller => :comments, :action => "create"}, :method => "post", :class => "add-comment") do %>
-  
-  <%= text_area_tag "body", "", :class => "input-xxlarge", :placeholder => "Your Comment", :rows => 5 %>
-  <%= hidden_field_tag "tutorial", @tutorial.id %>
- 
-  <div class="form-actions input">
-  	<%= button_to "Submit Comment", {:controller => :tutorials, :action => :create}, :class => "btn btn-primary" %>
-    <%= button_to "Cancel", {:controller => :tutorials, :action => :show, :id => @tutorial.id }, :class => "btn", :method => :get %>
+<%= form_tag({:controller => :comments, :action => "create"}, :method => "post", :class => "form-horizontal") do %>
+  <div class="control-group">
+    <label class="control-label" for="body">Comment</label>
+    <div class="controls">
+      <%= text_area_tag "body", "", :class => "input-xxlarge", :placeholder => "Comment", :rows => 5 %>
+    </div>
   </div>
-
+  <%= hidden_field_tag "tutorial", @tutorial.id %>
+  <div class="control-group">
+    <div class="form-actions input">
+      <%= button_to "Submit Comment", {:controller => :comments, :action => :create}, :class => "btn btn-primary" %>
+      <%= button_to "Cancel", {:controller => :tutorials, :action => :show, :id => @tutorial.id }, :class => "btn", :method => :get %>
+    </div>
+  </div>
 <% end %>

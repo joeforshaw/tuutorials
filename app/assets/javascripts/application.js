@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+(function($) {
+    $.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: ($(this).offset().top - parseInt($(this).css('margin-top')))+ 'px'
+        }, 'fast');
+        return this; // for chaining...
+    }
+})(jQuery);

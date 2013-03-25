@@ -6,11 +6,8 @@ a.up-vote {
   color: #57a957;
 }
 
-div.form-actions.input {
-  background-color: white;
-  border: 0;
-  margin: 0;
-  padding: 0;
+div#devise-links {
+  margin-left: 180px;
 }
 
 div.progress.progress-success.progress-striped {
@@ -21,12 +18,12 @@ div.progress.progress-success.progress-striped {
 }
 
 div.tutorial-wrapper {
-  float: left;
-  vertical-align: middle;
 }
 
 div.tutorial-info-wrapper {
   float: left;
+  display: inline-block;
+  width: 85%;
 }
 
 div.tutorial-info-wrapper p {
@@ -34,19 +31,19 @@ div.tutorial-info-wrapper p {
 }
 
 div.vote-wrapper {
+  display: inline-block;
   float: left;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
   text-align: center;
+  padding: 0 20px;
+  width: 10%;
 }
 
-h4.tutorial-name {
-  float: left;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 10px 0 0 0;
-  white-space: nowrap;
-  overflow: hidden;
+h3.tutorial-name {
+  font-size: 30px;
+  line-height: 40px;
 }
 
 input.btn.btn-primary {
@@ -56,12 +53,15 @@ input.btn.btn-primary {
 
 p.tutorial-info {
   color: #999;
-  float: left;
-  font-size: 15px;
-  line-height: 20px;
-  margin: 0 0 0 90px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 10px 0;
 }
 
 p#technology-description {
   margin: 0 0 10px 0;
+}
+
+span.tutorial-info-item {
+  margin: 5px 0px;
 }

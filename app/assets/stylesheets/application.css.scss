@@ -22,17 +22,21 @@ a {
 
 a.add {
   float: right;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 60px;
   margin: 10px 0 0 0;
   text-align: right;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
   background-color: #F0F0F0;
   color: #999999;
   font-family: 'CreteRounded-Regular', 'SkolarWeb', Helvetica;
-  width: 100%;
 }
 
 div.clear {
@@ -42,33 +46,57 @@ div.clear {
 div#content {
   text-shadow: 0 1px #ffffff;
   width: 100%;
+  padding: 40px 0;
 }
 
 div#content-wrapper {
   background-image: url('first_aid_kit.png');
-  padding: 60px 200px;
+  padding: 0 200px;
+  min-height: 100%;
+}
+
+div#error_explanation {
+  background-color: grey;
+  border: 3px solid red;
+  color: red;
+    display: inline-block;
+  margin: 10px 0px 20px 180px;
+}
+
+div#error_explanation h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 10px;
+}
+
+div#error_explanation li {
+  list-style: circle;
 }
 
 div#footer {
   background-image:url('px_by_Gre3g.png');
   background-color: #FFFFFF;
-  border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 0px 5px #999;
   clear: both;
   color: #999;
   padding: 50px 0;
-  position: relative;
   text-align: center;
+}
+
+div.form-actions.input {
+  background-color: transparent;
+  margin: 0;
+  padding-bottom: 0; 
+  padding-top: 0;
 }
 
 div#header {
   -webkit-box-shadow: 0 3px 3px #999;
      -moz-box-shadow: 0 3px 3px #999;
           box-shadow: 0 3px 3px #999; 
-    background-image: url('px_by_Gre3g.png');
-
+  background-image: url('px_by_Gre3g.png');
   padding: 40px 200px;
-  position: relative;
   z-index: 100;
 }
 
@@ -79,12 +107,8 @@ div.list-box {
 }
 
 div.list-box-text {
-  overflow: hidden;
-}
-
-div#page {
-  max-height: 100%;
-  min-height: 100%;
+  overflow: auto;
+  padding: 10px 0 0 0;
 }
 
 div#left-bar ul {
@@ -113,24 +137,27 @@ h1 a {
 }
 
 h2.main-heading {
-  float: left;
+  color: #888;
   font-size: 60px;
   line-height: 60px;
-  margin: 0 0 20px 0;
+  margin: 10px 0;
   white-space: nowrap;
 }
 
+h2#form-heading {
+  margin: 10px 0 10px 180px;
+}
+
 h3.sub-heading {
+  color: #888;
   float: left;
   font-size: 40px;
   line-height: 40px;
-  margin: 0 0 20px 0;
+  margin: 10px 0;
 }
 
-img#logo {
-  height: 90px;
-  padding: 0 20px;
-  vertical-align: text-bottom;
+label.control-label {
+  margin-right: 20px;
 }
 
 p {
@@ -140,7 +167,7 @@ p {
 }
 
 p#description {
-  margin: 0 0 20px 0;
+  margin: 10px 0;
 }
 
 span.category {
@@ -150,7 +177,4 @@ span.category {
   line-height: 20px;
   padding: 15px 0; 
   text-align: right;
-}
-
-span.empty-placeholder {
 }
