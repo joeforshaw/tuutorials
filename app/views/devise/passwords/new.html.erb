@@ -1,0 +1,15 @@
+<h2 id="form-heading">Forgot your password?</h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="control-group"><%= f.label :email %>
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div class="control-group">
+    <div class="form-actions input">
+      <%= f.submit "Send me reset password instructions", :class => "btn btn-primary" %>
+    </div>
+  </div>
+
+<% end %>

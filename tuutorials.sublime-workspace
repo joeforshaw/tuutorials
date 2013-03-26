@@ -1,0 +1,844 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"control-",
+				"control-label"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"gr",
+				"groupedAlphabetically"
+			],
+			[
+				"eac",
+				"each"
+			],
+			[
+				"text-s",
+				"text-transform"
+			],
+			[
+				"c",
+				"circle-item"
+			],
+			[
+				"co",
+				"control-group"
+			],
+			[
+				"t",
+				"tutorial-info"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"tut",
+				"tutorial_id"
+			],
+			[
+				"dec",
+				"decrement_counter"
+			],
+			[
+				"al",
+				"already_voted"
+			],
+			[
+				"use",
+				"user_id"
+			],
+			[
+				"uni",
+				"uniqueness"
+			],
+			[
+				"tu",
+				"tutorial"
+			],
+			[
+				"tech",
+				"technology"
+			],
+			[
+				"dow",
+				"down_votes"
+			],
+			[
+				"submitt",
+				"Submitted"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tuto",
+				"tutorial_id"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"up",
+				"up_votes"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"st",
+				"stylesheet_link_tag"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"app",
+				"applied_tags"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 1183,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/passwords/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 508,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/passwords/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 665,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/votes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/tutorials_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css.scss",
+			"settings":
+			{
+				"buffer_size": 3209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/home.css.scss",
+			"settings":
+			{
+				"buffer_size": 1008,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/technology.css.scss",
+			"settings":
+			{
+				"buffer_size": 878,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/tutorial.css.scss",
+			"settings":
+			{
+				"buffer_size": 659,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/comments/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 824,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/technologies_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/devise/sessions/new.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/home_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/devise/passwords/edit.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/home/index.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/users/show.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/tutorials/new.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/initializers/devise.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/devise/registrations/new.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/environments/development.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/comments/new.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/technology_category.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/tutorials/show.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/technologies/show.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/technology.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/application_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/javascripts/application.js",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/javascripts/home.js",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/votes_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/comments_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/users_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/tutorials_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/users/new.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/layouts/application.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/user.rb",
+		"/Users/Joe/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/vote.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/tutorial.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/routes.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/environment.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/routes.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/environments/test.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/environments/development.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config.ru",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/initializers/session_store.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/initializers/secret_token.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/environments/test.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/environments/production.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/application.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/environment.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/environments/production.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/initializers/secret_token.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/config/initializers/session_store.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/mrprogrammingtutorials/Rakefile",
+		"/Users/Joe/Projects/MrProgrammingTutorials/Rakefile",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config.ru",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/application.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/config/locales/en.yml",
+		"/Users/Joe/Projects/MrProgrammingTutorials/db/seeds.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/comment.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/db/migrate/20130127145508_create_votes.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/db/migrate/20121124140135_create_comments.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/doc/PopulateDatabase.txt",
+		"/Users/Joe/Projects/MrProgrammingTutorials/doc/ProgrammingLanguages.txt",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/stylesheets/technology.css.scss",
+		"/Users/Joe/Projects/MrProgrammingTutorials/db/migrate/20130209170045_devise_create_users.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/tag.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/applied_tag.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/README.rdoc",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/stylesheets/home.css.scss",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/stylesheets/application.css.scss",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/tags/show.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/votes/new.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/tags/index.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/tutorials/create.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/comments/create.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/tags_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/votes/create.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/stylesheets/bootstrap.css.scss",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/stylesheets/tag.css.scss",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/assets/stylesheets/application.css",
+		"/Users/Joe/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/views/programming_languages/show.html.erb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/controllers/programming_languages_controller.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/category.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/app/models/programming_language.rb",
+		"/Users/Joe/Projects/MrProgrammingTutorials/MrProgrammingTutorials.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/Joe/Projects/MrProgrammingTutorials"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n",
+			"height",
+			" height",
+			"min",
+			"position:",
+			"shadow",
+			"1",
+			"width:",
+			"LearnAProgrammingLanguage",
+			"LearnA",
+			"font",
+			"margin",
+			"@user",
+			"tutorial-info-wrapper",
+			"730",
+			"border",
+			"/t",
+			"\\t",
+			"h4",
+			"technology",
+			"comment",
+			"comments",
+			"= ",
+			"width",
+			"line",
+			"height",
+			"line",
+			"border",
+			"vertical",
+			"shadow",
+			"span",
+			"=> 1) => 1)",
+			" , ",
+			":id",
+			")",
+			"programming_language",
+			"ProgrammingLanguage",
+			"programming_languages",
+			"ProgrammingLanguage"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"vote",
+			"votes",
+			"=> 1)",
+			" ",
+			", :technology_category_id => 1)",
+			", :id => 1)",
+			"technology",
+			"Technology",
+			"technologies",
+			"Technology"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 1183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/devise/passwords/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/devise/passwords/edit.html.erb",
+					"settings":
+					{
+						"buffer_size": 665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								665,
+								665
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/home/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/votes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/tutorials_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "app/assets/stylesheets/application.css.scss",
+					"settings":
+					{
+						"buffer_size": 3209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1506,
+								1506
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 386.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/stylesheets/home.css.scss",
+					"settings":
+					{
+						"buffer_size": 1008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								824,
+								824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/assets/stylesheets/technology.css.scss",
+					"settings":
+					{
+						"buffer_size": 878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/assets/stylesheets/tutorial.css.scss",
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/comments/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 367.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.685444701991,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true
+}
