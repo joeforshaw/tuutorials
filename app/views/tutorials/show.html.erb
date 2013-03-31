@@ -6,7 +6,7 @@
 
 <p id="description"><%= @tutorial.description %></p>
 
-<h3 class="sub-heading">Comments</h3>
+<h3 class="sub-heading" id="comments-heading">Comments</h3>
 
 <%= link_to "+ Add Comment", { :controller => :comments, :action => :new, :tutorial => @tutorial.id }, :class => "add-comment" %>
 
@@ -18,7 +18,13 @@
 
   	<h4 class="comment-title"><%= link_to comment.user.username, comment.user %></h4>
 
-  	<span class="comment-timestamp">at <%= comment.created_at %></span>
+  	<span class="comment-timestamp"><%= time_ago_in_words comment.created_at %> ago</span>
+
+    <% if user_signed_in? && comment.is_reported?(current_user)  %>
+      <span><%= link_to "Unreport", unreport_path(:reported_object => comment.id, :report_category => "Comment") %></span>
+    <% else %>
+      <span><%= link_to "Report", { :action => "new", :controller => "reports", :reported_object => comment.id, :report_category => "Comment" } %></span>
+    <% end %>
 
   	<div class="clear"></div>
 

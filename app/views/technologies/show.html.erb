@@ -31,7 +31,7 @@
     <%# Tutorial link, submitter and up/down vote buttons %>
     <div class="list-box-text">
                 
-      <div class="tutorial-wrapper">
+      <div class="tutorial-wrapper" id="<%= tutorial.id %>">
 
         <div class="vote-wrapper">
           <%= link_to "+", { :action => "new", :controller => "votes", :tutorial => tutorial.id, :vote => 1 }, :class => "up-vote" %> 
@@ -45,9 +45,13 @@
                 
           <p class="tutorial-info">
             Submitted by 
-            <span class="tutorial-info-item"><%= link_to tutorial.user.username, tutorial.user %></span>
+            <span class="tutorial-info-item"><%= link_to tutorial.user.username, tutorial.user %> <%= time_ago_in_words tutorial.created_at %> ago</span>
             <span class="tutorial-info-item">-</span>
-            <span class="tutorial-info-item"><%= link_to "Report" %></span>
+            <% if user_signed_in? && tutorial.is_reported?(current_user)  %>
+              <span class="tutorial-info-item"><%= link_to "Unreport", unreport_path(:reported_object => tutorial.id, :report_category => "Tutorial") %></span>
+            <% else %>
+              <span class="tutorial-info-item"><%= link_to "Report", { :action => "new", :controller => "reports", :reported_object => tutorial.id, :report_category => "Tutorial" } %></span>
+            <% end %>
             <span class="tutorial-info-item">-</span>
             <span class="tutorial-info-item"><%= "#{tutorial.total_votes} #{tutorial.total_votes == 1 ? "vote" : "votes"}" %></span>
             <span class="tutorial-info-item">-</span>

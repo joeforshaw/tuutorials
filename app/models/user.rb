@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :comments
-  has_many :tutorials  
+  has_many :reports
+  has_many :tutorials
   has_many :votes
+  
+  include Reportable  
+
 end

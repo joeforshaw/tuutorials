@@ -22,13 +22,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
 
 gem 'devise'
 
 gem 'simple_form'
-
-gem 'tlsmail'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

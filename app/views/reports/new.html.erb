@@ -1,0 +1,18 @@
+<h2 id="form-heading">Report <%= params[:report_category] %></h2>
+
+<%= form_tag({:controller => :reports, :action => "create"}, :method => "post", :class => "form-horizontal") do %>
+  <div class="control-group">
+    <label class="control-label" for="reason">Reason</label>
+    <div class="controls">
+      <%= text_area_tag "reason", "", :class => "input-xxlarge", :placeholder => "Reason", :rows => 5 %>
+    </div>
+  </div>
+  <%= hidden_field_tag "report_category", params[:report_category] %>
+  <%= hidden_field_tag "reported_object", params[:reported_object] %>
+  <div class="control-group">
+    <div class="form-actions input">
+      <%= button_to "Submit Report", {:controller => :reports, :action => :create}, :class => "btn btn-primary" %>
+      <%= button_to "Cancel", @reported_object, :class => "btn", :method => :get %>
+    </div>
+  </div>
+<% end %>

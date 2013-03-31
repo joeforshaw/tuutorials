@@ -4,7 +4,15 @@ div#technology-container {
   column-count: 4;
 }
 
-h2.letter {
+h2#technologies-heading {
+  color: #888;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 80px 0 40px 0;
+  text-align: center;
+}
+
+h3.letter {
   font-size: 60px;
   margin: 60px 0;
   text-align: center;
@@ -16,11 +24,13 @@ div#nav-container {
 }
 
 li.technology-item {
-  list-style: none;
+  background: #EEE;
   box-shadow: 0 0 15px #777;
+  display: block;
   font-size: 40px;
   line-height: 140px;
-  margin: 10px;
+  list-style: none;
+  margin: 20px 0;
   overflow: hidden;
   text-align: center;
   text-shadow: 0 0;
@@ -30,7 +40,7 @@ li.technology-item {
 li.nav-item {
   cursor: pointer;
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
   list-style: none;
   margin: 3px;
   -o-transition:color .2s ease-out, background 1s ease-in;
@@ -44,11 +54,15 @@ li.nav-item:hover {
   color: #08c;
 }
 
+p.home-paragraph {
+  margin: 0 0 40px 0;
+}
+
 ul#technology-list {
   margin: 0;
 }
 
 ul#nav-list {
-  margin: 0;
+  margin: 10px 0;
   text-align: center;
 }

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130209170045) do
+ActiveRecord::Schema.define(:version => 20130329142443) do
 
   create_table "applied_tags", :force => true do |t|
     t.integer  "technology_id"
@@ -27,6 +27,21 @@ ActiveRecord::Schema.define(:version => 20130209170045) do
     t.integer  "reply_to"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "report_categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "reports", :force => true do |t|
+    t.integer  "report_category_id"
+    t.integer  "reported_object_id"
+    t.integer  "user_id"
+    t.text     "reason"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "tags", :force => true do |t|

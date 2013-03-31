@@ -1,9 +1,14 @@
-<h2 class="main-heading"><%= @user.username %></h2>
+<h2 class="main-heading">
+  <%= @user.username %> 
+  <span class="little-heading">registered <%= time_ago_in_words @user.created_at %> ago</span>
+</h2>
 
-<p><%= @user.bio %></p>
-
-<p>Registered at <%= @user.created_at %></p>
+<p id="bio"><%= @user.bio %></p>
 
 <% if current_user.id == @user.id %>
-  <p><%= link_to "Change password", :edit_user_password, :method => :get %></p>
+  <p><%= link_to "Change password", :edit_user_registration, :method => :get %></p>
+<% elsif user_signed_in? && @user.is_reported?(current_user)  %>
+  <p><%= link_to "Unreport", unreport_path(:reported_object => @user.id, :report_category => "User") %></p>
+<% else %>
+  <p><%= link_to "Report", { :action => "new", :controller => "reports", :reported_object => @user.id, :report_category => "User" } %></p>
 <% end %>

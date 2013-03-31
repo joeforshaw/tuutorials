@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: MrProgrammingTutorials_Development
+  database: tuutorials_Development
   host: localhost
   pool: 5
   username: 
@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  database: MrProgrammingTutorials_Test
+  database: tuutorials_Test
   host: localhost
   pool: 5
   username: 
@@ -19,7 +19,7 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: MrProgrammingTutorials_Production
+  database: tuutorials_Production
   host: localhost
   pool: 5
   username: 

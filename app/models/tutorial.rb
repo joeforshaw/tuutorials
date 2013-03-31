@@ -43,5 +43,7 @@ class Tutorial < ActiveRecord::Base
     up_votes + down_votes
   end
 
+  include Reportable  
+
 end
         
