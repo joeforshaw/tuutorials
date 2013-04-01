@@ -17,11 +17,11 @@ class ReportsController < ApplicationController
 
   def create
     category = ReportCategory.find_by_name(params[:report_category])
-
+    
     if category.nil?
       throw Exception
     end
-
+    
     if category.name == "Tutorial"
       @reported_object = Tutorial.find(params[:reported_object])
       redirect_to @reported_object.technology

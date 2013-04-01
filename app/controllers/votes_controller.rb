@@ -8,6 +8,10 @@ class VotesController < ApplicationController
   end
 
   def new
+
+  end
+
+  def create
     if !user_signed_in?
       redirect_to :user_session
       return
@@ -21,26 +25,8 @@ class VotesController < ApplicationController
       :tutorial_id => @tutorial.id,
       :user_id     => current_user.id
     )
-    
-    if @vote.valid? && @vote.save
-
-      if score > 0
-        @tutorial.up_vote!
-      elsif score == 0
-        @tutorial.down_vote!
-      else
-        throw Exception
-      end
-      
-      @result = "Thanks for voting"
-    else    
-      @result = @vote.errors.full_messages.to_sentence
-    end
-  end
-
-  def create
-    @vote = Vote.new(params[:id])
-    @vote.save
+    @tutorial.vote!(current_user, @vote)
+    redirect_to @vote.tutorial.technology
   end
 
   def edit

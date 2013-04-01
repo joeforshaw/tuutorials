@@ -6,7 +6,7 @@
 <p id="bio"><%= @user.bio %></p>
 
 <% if current_user.id == @user.id %>
-  <p><%= link_to "Change password", :edit_user_registration, :method => :get %></p>
+  <p><%= link_to "Edit Details", :edit_user_registration, :method => :get %></p>
 <% elsif user_signed_in? && @user.is_reported?(current_user)  %>
   <p><%= link_to "Unreport", unreport_path(:reported_object => @user.id, :report_category => "User") %></p>
 <% else %>

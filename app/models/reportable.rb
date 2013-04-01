@@ -1,6 +1,6 @@
 module Reportable
 
-  def is_reported?(by_user)
+  def is_reported_by?(by_user)
     category = ReportCategory.find_by_name(self.class.to_s)
 
     reports = Report.exists?(
