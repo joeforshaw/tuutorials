@@ -20,6 +20,18 @@
   src: local("CreteRound-Regular"), url("/assets/CreteRound-Regular.otf") format("truetype"); /* For non-IE */
 }
 
+@font-face {
+  font-family: Bitter-Regular;
+  src: url("/assets/Bitter-Regular.otf") format("truetype"); /* For IE */
+  src: local("Bitter-Regular"), url("/assets/Bitter-Regular.otf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: Bitter-Bold;
+  src: url("/assets/Bitter-Bold.otf") format("truetype"); /* For IE */
+  src: local("Bitter-Bold"), url("/assets/Bitter-Bold.otf") format("truetype"); /* For non-IE */
+}
+
 a {
   text-decoration: none;
 }
@@ -63,13 +75,13 @@ div#error_explanation {
   background-color: grey;
   border: 3px solid red;
   color: red;
-    display: inline-block;
+  display: inline-block;
   margin: 10px 0px 20px 180px;
 }
 
 div#error_explanation h2 {
   font-size: 20px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   margin: 0;
   padding: 0 10px;
 }
@@ -127,10 +139,14 @@ div#login {
   line-height: 60px;
 }
 
+h2, h3, h4 {
+  color: #888;
+  font-weight: normal;
+}
+
 h1 {
   color: #333;
   float: left;
-  font-weight: bold;
   font-size: 60px;
   line-height: 60px;
   margin: 0 0;
@@ -141,7 +157,6 @@ h1 a {
 }
 
 h2.main-heading {
-  color: #888;
   font-size: 60px;
   line-height: 60px;
   margin: 10px 0;
@@ -153,7 +168,6 @@ h2#form-heading {
 }
 
 h3.sub-heading {
-  color: #888;
   font-size: 40px;
   line-height: 40px;
   margin: 10px 0;

@@ -13,9 +13,6 @@ class Tutorial < ActiveRecord::Base
   validates :name,
             :presence => true,
             :length   => { :minimum => 1 }
-  validates :description,
-            :presence => true,
-            :length   => { :minimum => 1 }
   validates :technology_id,
             :presence => true
   validates :user_id,
