@@ -14,7 +14,11 @@
  *= require_tree
  */
 
-@import url("https://fnt.webink.com/wfs/webink.css/?project=3709B5CA-B7B5-4753-AAD7-4D5ACAEC8172&fonts=741523D5-28BB-38D7-153A-061C4EDD1B98:f=CreteRounded-Regular,E3E82DBC-87D6-BA5B-D745-2846E3AA460D:f=SkolarWeb,E91036C1-9B3E-398B-6BC8-3F30F4412BFB:f=SkolarWeb-Bold");
+@font-face {
+  font-family: CreteRound-Regular;
+  src: url("/assets/CreteRound-Regular.otf") format("truetype"); /* For IE */
+  src: local("CreteRound-Regular"), url("/assets/CreteRound-Regular.otf") format("truetype"); /* For non-IE */
+}
 
 a {
   text-decoration: none;
@@ -36,7 +40,7 @@ html, body {
 body {
   background-color: #F0F0F0;
   color: #999999;
-  font-family: 'CreteRounded-Regular', 'SkolarWeb', Helvetica;
+  font-family: CreteRound-Regular, Helvetica;
 }
 
 div.clear {
