@@ -23,8 +23,10 @@ class Tutorial < ActiveRecord::Base
 
   belongs_to :technology
   belongs_to :user
-  has_many   :comments
-  has_many   :votes
+  belongs_to :reportable, :polymorphic => true
+  
+  has_many   :comments, :dependent => :destroy
+  has_many   :votes,    :dependent => :destroy
 
   def percent_rating
     return 0 if (up_votes + down_votes).zero?

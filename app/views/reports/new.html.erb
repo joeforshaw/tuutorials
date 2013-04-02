@@ -12,7 +12,7 @@
   <div class="control-group">
     <div class="form-actions input">
       <%= button_to "Submit Report", {:controller => :reports, :action => :create}, :class => "btn btn-primary" %>
-      <%= button_to "Cancel", @reported_object, :class => "btn", :method => :get %>
+      <%= button_to "Cancel", @cancel_object, :class => "btn", :method => :get %>
     </div>
   </div>
 <% end %>

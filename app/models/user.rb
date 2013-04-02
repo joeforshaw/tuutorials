@@ -16,13 +16,14 @@ class User < ActiveRecord::Base
                   :password_confirmation,
                   :remember_me,
                   :username
-  # attr_accessible :title, :body
 
-  has_many :comments
-  has_many :reports
-  has_many :tutorials
-  has_many :votes
-  
+  belongs_to :reportable, :polymorphic => true
+
+  has_many :comments,  :dependent => :destroy
+  has_many :reports,   :dependent => :destroy
+  has_many :tutorials, :dependent => :destroy
+  has_many :votes,     :dependent => :destroy
+
   include Reportable  
 
 end

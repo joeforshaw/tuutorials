@@ -10,7 +10,10 @@ class Comment < ActiveRecord::Base
   
   belongs_to :tutorial
   belongs_to :user
+  belongs_to :reportable, :polymorphic => true
+  
+  has_many :reports, :dependent => :destroy
 
   include Reportable
-  
+
 end

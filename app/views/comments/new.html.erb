@@ -11,7 +11,7 @@
   <div class="control-group">
     <div class="form-actions input">
       <%= button_to "Submit Comment", {:controller => :comments, :action => :create}, :class => "btn btn-primary" %>
-      <%= button_to "Cancel", {:controller => :tutorials, :action => :show, :id => @tutorial.id }, :class => "btn", :method => :get %>
+      <%= button_to "Cancel", @tutorial, :class => "btn", :method => :get %>
     </div>
   </div>
 <% end %>
