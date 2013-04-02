@@ -65,5 +65,5 @@ Tuutorials::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  GA.tracker = "UA-xxxxxx-x"
+  GA.tracker = "UA-39785477-1"
 end
