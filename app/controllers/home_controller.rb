@@ -6,9 +6,11 @@ class HomeController < ApplicationController
       @votes   = current_user.votes
     end
 
-    @groupedAlphabetically = Technology.all.group_by { |technology|
+    all_technologies = Technology.all.sort! { |a, b| a.name.upcase <=> b.name.upcase }
+    @groupedAlphabetically = all_technologies.group_by do |technology|
       technology.name[0,1].upcase
-    }
+    end
+
   end
 
 end
