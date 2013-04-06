@@ -8,15 +8,16 @@ class Tutorial < ActiveRecord::Base
                   :down_votes
   
   validates :link,
-            :presence => true,
-            :length   => { :minimum => 1 }
+            :presence   => true
   validates :name,
-            :presence => true,
-            :length   => { :minimum => 1 }
+            :presence   => true,
+            :uniqueness => {:scope => [:link, :technology_id],
+                                       :message => " already submitted!"}
+
   validates :technology_id,
-            :presence => true
+            :presence   => true
   validates :user_id,
-            :presence => true
+            :presence   => true
 
   belongs_to :technology
   belongs_to :user

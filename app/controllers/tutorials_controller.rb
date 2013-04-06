@@ -17,9 +17,14 @@
 
   def create
     @technology = Technology.find(params[:technology])
+    if params[:link].nil? || params[:link] == ""
+      link = nil
+    else 
+      link = /^http/.match(params[:link]) ? params[:link] : "http://#{params[:link]}"
+    end
     @tutorial = Tutorial.new(
       :name          => params[:name],
-      :link          => /^http/.match(params[:link]) ? params[:link] : "http://#{params[:link]}",
+      :link          => link,
       :description   => params[:description],
       :technology_id => @technology.id,
       :user_id       => current_user.id,
@@ -27,7 +32,7 @@
       :down_votes    => 0
     )
     if @tutorial.save
-      @result = "Successfully added \"#{@tutorial.name}\""
+      redirect_to @tutorial.technology
     else
       @result = "Failed to add \"#{@tutorial.name}\""
     end
