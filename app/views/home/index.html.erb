@@ -10,12 +10,10 @@
   <ul id="nav-list">
     
     <% ("A".."Z").each do |letter| %>
-      <li class="nav-item" onclick=$('#<%= letter %>').goTo();>
-        <%= letter %>
-      </li>
+      <li class="nav-item" onclick=$('#<%= letter %>').goTo();><%= link_to letter, "##{letter}" %></li>
     <% end %>
-    <li class="nav-item" onclick=$('#numbers').goTo();>0-9</li>
-    <li class="nav-item" onclick=$('#symbols').goTo();>!?#</li>
+    <a><li class="nav-item" onclick=$('#numbers').goTo();>0-9</li></a>
+    <a><li class="nav-item" onclick=$('#symbols').goTo();>!?#</li></a>
     
   </ul>
 </div>
