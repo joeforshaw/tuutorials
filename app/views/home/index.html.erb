@@ -4,13 +4,6 @@
   the best tutorials easy.
 </p>
 
-<h3 class="sub-heading">Something missing?</h3>
-<p class="home-paragraph">
-  Cool new technologies are always popping up, so I could really use your help keeping up.
-  If you spot something missing that you think should make the list send me an 
-  <%= mail_to "tuutorials@gmail.com", "email" %> and I'll add it as soon as I can.
-</p>
-
 <h2 id="technologies-heading">Technologies</h2>
 
 <div id="nav-container">
@@ -51,6 +44,14 @@
 
   <!-- Technologies that start with a symbol -->
   <h3 class="letter" id="symbols">!?#</h3>
-  <!-- TODO -->
+  <% ["!", "?", "#"].each do |symbol| %>
+    <% if !@groupedAlphabetically[symbol].nil? %>
+      <% @groupedAlphabetically[symbol].each do |technology| %>
+        <li class="technology-item"><%= link_to technology.name, technology %></li>
+      <% end %>
+    <% end %>
+  <% end %>
 
 </ul>
+
+<p><%= missing_technology_link %></p> 
