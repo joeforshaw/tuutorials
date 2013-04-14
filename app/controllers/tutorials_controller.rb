@@ -32,7 +32,7 @@
       :down_votes    => 0
     )
     if @tutorial.save
-      redirect_to @tutorial.technology
+      redirect_to(@tutorial.technology, :anchor => "#{@tutorial.id}")
     else
       @result = "Failed to add \"#{@tutorial.name}\""
     end

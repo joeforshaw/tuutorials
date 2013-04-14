@@ -14,6 +14,7 @@ s_s_framework = TechnologyCategory.create(:name => "Server-side framework")
 c_s_framework = TechnologyCategory.create(:name => "Client-side framework")
 protocol = TechnologyCategory.create(:name => "Protocol")
 library = TechnologyCategory.create(:name => "Library")
+platform = TechnologyCategory.create(:name => "Platform")
 
 ReportCategory.create(:name => "Tutorial")
 ReportCategory.create(:name => "Comment")
@@ -90,6 +91,8 @@ Technology.create(:name => "Node.js", :technology_category_id => s_s_framework.i
 Technology.create(:name => "AngularJS", :technology_category_id => c_s_framework.id)
 
 Technology.create(:name => "Backbone.js", :technology_category_id => library.id)
+
+Technology.create(:name => "Magento", :technology_category_id => platform.id)
 
 joe = User.create!(:bio => "I am the creator", :email => "joe.d.forshaw@gmail.com", :password => "password", :password_confirmation => "password", :username => "Joe")
 

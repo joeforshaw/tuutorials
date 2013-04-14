@@ -21,7 +21,13 @@
 <% end %>
 
 <% @tutorials.each do |tutorial| %>
-  <div class="list-box">
+  <% if tutorial.up_voted?(current_user) %>
+    <div class="list-box up-vote" id="<%= tutorial.id %>">
+  <% elsif tutorial.down_voted?(current_user) %>
+    <div class="list-box down-vote" id="<%= tutorial.id %>">
+  <% else %>
+    <div class="list-box" id="<%= tutorial.id %>">
+  <% end %>
 
     <%# Bootstrap Tutorial rating bar %>
     <div class="progress progress-success progress-striped">        
@@ -37,13 +43,13 @@
           <% if user_signed_in? && tutorial.up_voted?(current_user) %>
             <span class="voted">+</span>
           <% else %>
-            <%= link_to "+", { :action => "create", :controller => "votes", :tutorial => tutorial.id, :vote => 1 }, :class => "up-vote", :method => :post %> 
+            <%= link_to "+", { :action => "create", :controller => "votes", :tutorial => tutorial.id, :vote => 1 }, :class => "up-vote-button", :method => :post %> 
           <% end %>
 
           <% if user_signed_in? && tutorial.down_voted?(current_user) %>
             <span class="voted">-</span>
           <% else %>
-            <%= link_to "-", { :action => "create", :controller => "votes", :tutorial => tutorial.id, :vote => 0 }, :class => "down-vote", :method => :post %>
+            <%= link_to "-", { :action => "create", :controller => "votes", :tutorial => tutorial.id, :vote => 0 }, :class => "down-vote-button", :method => :post %>
           <% end %>
         </div> 
         

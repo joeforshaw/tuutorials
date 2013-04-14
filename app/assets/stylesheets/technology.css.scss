@@ -1,8 +1,8 @@
-a.down-vote {
+a.down-vote-button {
   color: red;
 }
 
-a.up-vote {
+a.up-vote-button {
   color: #57a957;
 }
 
@@ -14,10 +14,24 @@ div#devise-links {
   margin-left: 180px;
 }
 
-div.progress.progress-success.progress-striped {
+div.down-vote {
+  background-color: rgba(255, 230, 230, 0.4);
+  -moz-box-shadow: 0 0 10px #FFE6E6;
+  -webkit-box-shadow: 0 0 10px #FFE6E6;
+  box-shadow: 0 0 10px #FFE6E6;
+}
+
+div.up-vote {
+  background-color: rgba(237, 255, 239, 0.4);
+  -moz-box-shadow: 0 0 10px #EDFFEF;
+  -webkit-box-shadow: 0 0 10px #EDFFEF;
+  box-shadow: 0 0 10px #EDFFEF;
+}
+
+div.progress {
   color: #999;
   text-align: center;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
 }
 
