@@ -6,7 +6,7 @@ class TechnologiesController < ApplicationController
   def show
     @technology = Technology.find(params[:id])
     @tags       = @technology.tags
-    @tutorials  = @technology.tutorials.all
+    @tutorials  = @technology.tutorials
 
     @tutorials.sort! { |a, b| b.percent_rating <=> a.percent_rating }
   end

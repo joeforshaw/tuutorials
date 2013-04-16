@@ -35,26 +35,20 @@ div.progress {
   padding: 0;
 }
 
-div.tutorial-wrapper {
-}
-
 div.tutorial-info-wrapper {
-  float: left;
   display: inline-block;
-  width: 85%;
 }
 
 div.tutorial-info-wrapper p {
   margin: 0;
 }
 
-div.vote-wrapper {
-  display: inline-block;
-  float: left;
+span.vote-wrapper {
   font-size: 60px;
   line-height: 60px;
   text-align: center;
   padding: 0 20px;
+  margin: 0;
   width: 10%;
 }
 
@@ -81,9 +75,16 @@ p#technology-description {
 
 span.tutorial-info-item {
   margin: 5px 0px;
+  white-space: nowrap;
+
 }
 
 span.tutorial-link {
   color: #BBB;
   font-size: 20px;
+}
+
+td.vote-cell {
+  min-width: 120px;
+  vertical-align: top;
 }

@@ -53,6 +53,7 @@ body {
   background-color: #F0F0F0;
   color: #999999;
   font-family: CreteRound-Regular, Helvetica;
+  width: 100%;
 }
 
 div.clear {
@@ -61,13 +62,13 @@ div.clear {
 
 div#content {
   text-shadow: 0 1px #ffffff;
-  width: 100%;
   padding: 60px 0;
+  margin: 0 auto;
 }
 
 div#content-wrapper {
   background-image: url('first_aid_kit.png');
-  padding: 0 200px;
+  padding: 0 10%;
   min-height: 100%;
 }
 
@@ -112,7 +113,7 @@ div#header {
      -moz-box-shadow: 0 3px 3px #999;
           box-shadow: 0 3px 3px #999; 
   background-image: url('px_by_Gre3g.png');
-  padding: 40px 200px;
+  padding: 40px 10%;
   z-index: 100;
 }
 
