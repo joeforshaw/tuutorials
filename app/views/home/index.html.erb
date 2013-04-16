@@ -12,8 +12,8 @@
     <% ("A".."Z").each do |letter| %>
       <li class="nav-item" onclick=$('#<%= letter %>').goTo();><%= link_to letter, "##{letter}" %></li>
     <% end %>
-    <a><li class="nav-item" onclick=$('#numbers').goTo();>0-9</li></a>
-    <a><li class="nav-item" onclick=$('#symbols').goTo();>!?#</li></a>
+    <li class="nav-item" onclick=$('#numbers').goTo();><a href="#numbers">0-9</a></li>
+    <li class="nav-item" onclick=$('#symbols').goTo();><a href="#symbols">!?#</a></li>
     
   </ul>
 </div>
@@ -25,7 +25,7 @@
     <h3 class="letter" id="<%= letter %>"><%= letter %></h3>
     <% if !@groupedAlphabetically[letter].nil? %>
       <% @groupedAlphabetically[letter].each do |technology| %>
-        <li class="technology-item"><%= link_to technology.name, technology %></li>
+        <a href="<%= technology_path(technology) %>"><li class="technology-item"><%= technology.name %></li></a>
       <% end %>
     <% end %>
   <% end %>
