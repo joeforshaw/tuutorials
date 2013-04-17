@@ -20,18 +20,6 @@
   src: local("CreteRound-Regular"), url("/assets/CreteRound-Regular.otf") format("truetype"); /* For non-IE */
 }
 
-@font-face {
-  font-family: Bitter-Regular;
-  src: url("/assets/Bitter-Regular.otf") format("truetype"); /* For IE */
-  src: local("Bitter-Regular"), url("/assets/Bitter-Regular.otf") format("truetype"); /* For non-IE */
-}
-
-@font-face {
-  font-family: Bitter-Bold;
-  src: url("/assets/Bitter-Bold.otf") format("truetype"); /* For IE */
-  src: local("Bitter-Bold"), url("/assets/Bitter-Bold.otf") format("truetype"); /* For non-IE */
-}
-
 a {
   text-decoration: none;
 }
@@ -67,14 +55,13 @@ div#content {
 }
 
 div#content-wrapper {
-  background-image: url('first_aid_kit.png');
+  background-image: url('dust.png');
   padding: 0 10%;
   min-height: 100%;
 }
 
 div#error_explanation {
-  background-color: grey;
-  border: 3px solid red;
+  border: 1px solid red;
   color: red;
   display: inline-block;
   margin: 10px 0px 20px 180px;
@@ -92,11 +79,12 @@ div#error_explanation li {
 }
 
 div#footer {
-  background-image:url('px_by_Gre3g.png');
-  background-color: #FFFFFF;
+  /*background-image:url('px_by_Gre3g.png');*/
+  background-color: #262626;
   box-shadow: 0px 0px 5px #999;
   clear: both;
   color: #999;
+  font-size: 20px;
   padding: 50px 0;
   text-align: center;
 }
@@ -108,11 +96,25 @@ div.form-actions.input {
   padding-top: 0;
 }
 
+h1 a:hover{
+  color: #EEE;
+  text-decoration: none;
+}
+
+#fullstop {
+  color: #888;
+}
+
+#fullstop:hover {
+  color: #57a957;
+}
+
 div#header {
+  background-color: #262626;
   -webkit-box-shadow: 0 3px 3px #999;
      -moz-box-shadow: 0 3px 3px #999;
           box-shadow: 0 3px 3px #999; 
-  background-image: url('px_by_Gre3g.png');
+  /*background-image: url('px_by_Gre3g.png');*/
   padding: 40px 10%;
   z-index: 100;
 }

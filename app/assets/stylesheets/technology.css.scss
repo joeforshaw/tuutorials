@@ -15,17 +15,17 @@ div#devise-links {
 }
 
 div.down-vote {
-  background-color: rgba(255, 210, 210, 0.4);
+  /*background-color: rgba(255, 210, 210, 0.4);
   -moz-box-shadow: 0 0 10px #FFE6E6;
   -webkit-box-shadow: 0 0 10px #FFE6E6;
-  box-shadow: 0 0 10px #FFE6E6;
+  box-shadow: 0 0 10px #FFE6E6;*/
 }
 
 div.up-vote {
-  background-color: rgba(222, 255, 226, 0.4);
+  /*background-color: rgba(222, 255, 226, 0.4);
   -moz-box-shadow: 0 0 10px #EDFFEF;
   -webkit-box-shadow: 0 0 10px #EDFFEF;
-  box-shadow: 0 0 10px #EDFFEF;
+  box-shadow: 0 0 10px #EDFFEF;*/
 }
 
 div.progress {
@@ -46,8 +46,6 @@ div.tutorial-info-wrapper p {
 span.vote-wrapper {
   font-size: 60px;
   line-height: 60px;
-  text-align: center;
-  padding: 0 20px;
   margin: 0;
   width: 10%;
 }
@@ -84,7 +82,12 @@ span.tutorial-link {
   font-size: 20px;
 }
 
+table {
+  margin: 0 20px;
+}
+
 td.vote-cell {
   min-width: 120px;
+  text-align: center;
   vertical-align: top;
 }
