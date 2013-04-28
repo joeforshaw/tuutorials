@@ -17,8 +17,34 @@
 (function($) {
     $.fn.goTo = function() {
         $('html, body').animate({
-            scrollTop: ($(this).offset().top - parseInt($(this).css('margin-top')))+ 'px'
-        }, 'fast');
+            scrollTop: ($(this).offset().top - parseInt($(this).css('margin-top')) - $('div#nav-container').outerHeight(true))+ 'px'
+        }, 'slow');
         return this; // for chaining...
     }
 })(jQuery);
+
+function moveScroller() {
+    var move = function() {
+        var st = $(window).scrollTop();
+        var ot = $("#scroller-anchor").offset().top;
+        var s = $("div#nav-container");
+        if(st > ot) {
+            $("#scroller-anchor").height(s.outerHeight());
+            s.css({
+                position: "fixed",
+                top: "0px"
+            });
+        } else {
+            $("#scroller-anchor").height(0);
+            if(st <= ot) {
+                s.css({
+                    position: "relative",
+                    top: ""
+                });
+            }
+        }
+    };
+    $(window).scroll(move);
+    move();
+}
+moveScroller();

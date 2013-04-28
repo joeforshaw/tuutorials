@@ -37,8 +37,23 @@
     
     </div>
 
+    <% if current_page?(root_url) %>
+      <div id="scroller-anchor"></div> 
+      <div id="nav-container">
+        <ul id="nav-list">
+          
+          <% ("A".."Z").each do |letter| %>
+            <li class="nav-item" onclick=$('#<%= letter %>').goTo();><a><%= letter %></a></li>
+          <% end %>
+          <li class="nav-item" onclick=$('#numbers').goTo();><a>0-9</a></li>
+          <li class="nav-item" onclick=$('#symbols').goTo();><a>!?#</a></li>
+          
+        </ul>
+      </div>
+    <% end %>
+
     <div id="content-wrapper">
-      
+
       <div id="content">
 
         <%= yield %>
@@ -49,7 +64,7 @@
   
     <div id="footer">
       
-      &copy Joe Forshaw <%= Time.new.year %> - <a href="https://twitter.com/JoeDForshaw">@JoeDForshaw</a> - <a href="https://joeforshaw.co.uk">joeforshaw.co.uk</a>
+      &copy Joe Forshaw <%= Time.new.year %> - <a href="https://twitter.com/JoeDForshaw">@JoeDForshaw</a> - <a href="http://joeforshaw.co.uk">joeforshaw.co.uk</a>
     
     </div>
     
