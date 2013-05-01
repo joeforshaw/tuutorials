@@ -6,13 +6,14 @@
   width: 100%;
 }
 
-h3.letter {
-  font-size: 60px;
-  padding: 40px 0;
-  text-align: center;
+div#intro {
+  background-image: url('dust.png');
+  font-size: 30px;
+  line-height: 30px;
+  padding: 20px 10%;
 }
 
-div#nav-container {
+div#nav-container { 
   background-image: url('dust.png');
   border-bottom: 3px solid #CCC;
   padding: 20px 10%;
@@ -24,6 +25,16 @@ div#nav-container {
 
 div#nav-container-padding {
   height: 70px;
+}
+
+div#scroller-anchor {
+  background-image: url('dust.png');
+}
+
+h3.letter {
+  font-size: 60px;
+  padding: 40px 0;
+  text-align: center;
 }
 
 li.technology-item {

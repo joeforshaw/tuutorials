@@ -1,5 +1,5 @@
 <h2 class="main-heading">
-  <%= @tutorial.name %>
+  <%= link_to @tutorial.name, @tutorial.link %>
 </h2>
 
 <div class="clear"></div>
@@ -20,7 +20,7 @@
 
   	<span class="comment-timestamp"><%= time_ago_in_words comment.created_at %> ago</span>
 
-    <% if user_signed_in? && comment.is_reported?(current_user)  %>
+    <% if user_signed_in? && comment.is_reported_by?(current_user)  %>
       <span><%= link_to "Unreport", unreport_path(:reported_object => comment.id, :report_category => "Comment") %></span>
     <% else %>
       <span><%= link_to "Report", { :action => "new", :controller => "reports", :reported_object => comment.id, :report_category => "Comment" } %></span>

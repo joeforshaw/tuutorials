@@ -1,0 +1,12 @@
+<div id="scroller-anchor"></div> 
+<div id="nav-container">
+  <ul id="nav-list">
+    
+    <% ("A".."Z").each do |letter| %>
+      <li class="nav-item" onclick=$('#<%= letter %>').goTo();><a><%= letter %></a></li>
+    <% end %>
+    <li class="nav-item" onclick=$('#numbers').goTo();><a>0-9</a></li>
+    <li class="nav-item" onclick=$('#symbols').goTo();><a>!?#</a></li>
+    
+  </ul>
+</div>
