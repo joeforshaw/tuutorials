@@ -6,6 +6,7 @@
   def show
     @tutorial = Tutorial.find(params[:id])
     @comments = @tutorial.comments
+    @title    = @tutorial.name
   end
 
   def new

@@ -7,6 +7,7 @@ class TechnologiesController < ApplicationController
     @technology = Technology.find(params[:id])
     @tags       = @technology.tags
     @tutorials  = @technology.tutorials
+    @title      = "#{@technology.name} tutorials"
 
     @tutorials.sort! { |a, b| b.percent_rating <=> a.percent_rating }
   end
