@@ -23,9 +23,11 @@
 
     <div id="header">
       
-      <h1>
+      <h1 id="tuutorials">
         <a href="/">tuutorials<span id="fullstop">.</span></a>
       </h1>
+
+      <%= link_to "technologies", technologies_url, :class => "technologies-button" %>
 
       <div id="login" >
       <% if user_signed_in? %>
@@ -35,7 +37,7 @@
       <% else %>
         <%= link_to "Log in", :user_session, :method => :post %>
         -
-        <%= link_to "Register", :new_user_registration %>
+        <%= link_to "Sign up", :new_user_registration %>
       <% end %>
       </div>
 
@@ -43,7 +45,7 @@
     
     </div>
 
-    <% if current_page?(root_url) %>
+    <% if current_page?(technologies_url) %>
       <%= render "home/head" %>
     <% end %>
 

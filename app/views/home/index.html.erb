@@ -1,35 +1,60 @@
-<ul id="technology-list">
+<div id="home-content">
 
-  <!-- Technologies that start with a letter -->
-  <% ("A".."Z").each do |letter| %>
-    <h3 class="letter" id="<%= letter %>"><%= letter %></h3>
-    <% if !@groupedAlphabetically[letter].nil? %>
-      <% @groupedAlphabetically[letter].each do |technology| %>
-        <a href="<%= technology_path(technology) %>"><li class="technology-item"><%= technology.name %></li></a>
-      <% end %>
-    <% end %>
-  <% end %>
+  <div class="row-fluid">
+    
+    <div class="span6">
+      <h2>What is tuutorials?</h2>
+      <p>
+         tuutorials is a repository for any <strong>online technology tutorials</strong>.
+         All tutorials are displayed by their user rating, making the best tutorials really easy to find.
+      </p>
 
-  <!-- Technologies that start with a number -->
-  <h3 class="letter" id="numbers">0-9</h3>
-  <% ("0".."9").each do |number| %>
-    <% if !@groupedAlphabetically[number].nil? %>
-      <% @groupedAlphabetically[number].each do |technology| %>
-        <li class="technology-item"><%= link_to technology.name, technology %></li>
-      <% end %>
-    <% end %>
-  <% end %>
+      <p>
+         Submitted tutorials should touch on all important areas of a technology, not just a very specific part of it.
+       </p>
+    </div>
 
-  <!-- Technologies that start with a symbol -->
-  <h3 class="letter" id="symbols">!?#</h3>
-  <% ["!", "?", "#"].each do |symbol| %>
-    <% if !@groupedAlphabetically[symbol].nil? %>
-      <% @groupedAlphabetically[symbol].each do |technology| %>
-        <li class="technology-item"><%= link_to technology.name, technology %></li>
-      <% end %>
-    <% end %>
-  <% end %>
+    <div class="span6">
+      <h2>"Why not just use Google?"</h2>
+      <p>
+        Google doesn't rank tutorials based on their quality - tuutorials does.
+        By ordering tutorials by their user rating, you can start learning from the best ones much quicker.
+      </p>
+    </div>
+    
+  </div>
 
-</ul>
+</div>
 
-<p><%= missing_technology_link %></p> 
+<div id="home-content">
+
+  <div class="row-fluid">
+
+    <div class="span6">
+      <h2>How do I get started?</h2>
+      <p>
+        <%= link_to "You can start checking out tutorials right now!", technologies_url %>
+        <ol class="home-list">
+          <li>Follow the link above to see a list of all available technologies</li>
+          <li>Select the technology you want to learn about</li>
+          <li>Click the technology tutorial you want to check out</li>
+        </ol>
+      </p>
+    </div>
+
+    <div class="span6">
+      <h2>Why sign up?</h2>
+      <p>If you <%= link_to "sign up", :new_user_registration %>, you can:</p>
+      <ul class="home-list">
+        <li>Submit your own tutorials</li>
+        <li>Comment on tutorials</li>
+        <li>Vote up the tutorials you like</li>
+        <li>Vote down the ones you don't!</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<%= link_to "Check out the tutorials >", technologies_url, :id => "hero-link" %>

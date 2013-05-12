@@ -98,3 +98,75 @@ td.vote-cell {
   text-align: center;
   vertical-align: top;
 }
+
+li.technology-item {
+  background-color: #EEE;
+  -webkit-box-shadow: 0 0 10px #777;
+     -moz-box-shadow: 0 0 10px #777;
+          box-shadow: 0 0 10px #777;
+  display: block;
+  font-size: 40px;
+  line-height: 100px;
+  list-style: none;
+  margin: 20px 0;
+  overflow: hidden;
+  text-align: center;
+  text-shadow: 0 0;
+  white-space: nowrap;
+}
+
+li.nav-item {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 30px;
+  list-style: none;
+  margin: 0.75%;
+}
+
+li.nav-item:hover {
+  color: #08c;
+}
+
+
+div#nav-container { 
+  background-image: url('dust.png');
+  border-bottom: 3px solid #CCC;
+  padding: 20px 10%;
+  position: relative;
+  margin: 0 0%;
+  width: 80%;
+  z-index: 100;
+}
+
+div#nav-container-padding {
+  height: 70px;
+}
+
+div#scroller-anchor {
+  background-image: url('dust.png');
+}
+
+
+ul#technology-list {
+  margin: 0;
+  border-bottom: 3px solid #CCC;
+}
+
+ul#nav-list {
+  text-align: center;
+  margin: 0;
+}
+
+#missing-technology {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  margin: 40px 0 0 0;
+  width: 100%;
+}
+
+h3.letter {
+  font-size: 60px;
+  padding: 40px 0;
+  text-align: center;
+}

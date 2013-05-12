@@ -14,6 +14,7 @@
       redirect_to :user_session
     end
     @technology = Technology.find(params[:technology])
+    @title = "Add #{@technology.name} Tutorial"
   end
 
   def create
