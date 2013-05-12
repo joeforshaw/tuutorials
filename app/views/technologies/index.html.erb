@@ -1,0 +1,35 @@
+<ul id="technology-list">
+
+  <!-- Technologies that start with a letter -->
+  <% ("A".."Z").each do |letter| %>
+    <h3 class="letter" id="<%= letter %>"><%= letter %></h3>
+    <% if !@technologies_grouped_alphabetically[letter].nil? %>
+      <% @technologies_grouped_alphabetically[letter].each do |technology| %>
+        <a href="<%= technology_path(technology) %>"><li class="technology-item"><%= technology.name %></li></a>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <!-- Technologies that start with a number -->
+  <h3 class="letter" id="numbers">0-9</h3>
+  <% ("0".."9").each do |number| %>
+    <% if !@technologies_grouped_alphabetically[number].nil? %>
+      <% @technologies_grouped_alphabetically[number].each do |technology| %>
+        <li class="technology-item"><%= link_to technology.name, technology %></li>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <!-- Technologies that start with a symbol -->
+  <h3 class="letter" id="symbols">!?#</h3>
+  <% ["!", "?", "#"].each do |symbol| %>
+    <% if !@technologies_grouped_alphabetically[symbol].nil? %>
+      <% @technologies_grouped_alphabetically[symbol].each do |technology| %>
+        <li class="technology-item"><%= link_to technology.name, technology %></li>
+      <% end %>
+    <% end %>
+  <% end %>
+
+</ul>
+
+<p><%= missing_technology_link %></p> 
